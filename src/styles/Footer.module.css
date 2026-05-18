@@ -1,0 +1,172 @@
+.footer {
+  background-color: #0b151e;
+  background-image: linear-gradient(rgba(11, 21, 30, 0.9), rgba(11, 21, 30, 0.95)), url('/images/faq_bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  padding: 100px 40px 60px 40px;
+  font-family: inherit;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footerContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 60px;
+}
+
+.ctaCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctaTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.highlight {
+  color: #DDA24C;
+}
+
+.ctaDesc {
+  color: #9ca3af;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 320px;
+}
+
+.workTogether {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.workTogether:hover {
+  color: #DDA24C;
+}
+
+/* Link Columns */
+.colTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLink {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #DDA24C;
+  padding-left: 5px;
+}
+
+/* Connect Column */
+.connectCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icon {
+  color: #FFFFFF;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.infoText {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.socialRow {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #DDA24C;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  background: #FFFFFF;
+  color: #DDA24C;
+  transform: translateY(-5px);
+}
+
+.bottomBar {
+  max-width: 1400px;
+  margin: 60px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1200px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .ctaTitle {
+    font-size: 1.8rem;
+  }
+}

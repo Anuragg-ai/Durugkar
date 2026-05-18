@@ -1,0 +1,78 @@
+:root {
+  --color-bg: #121212;
+  --color-surface: #1E1E1E;
+  --color-primary: #F37021;
+  --color-accent: #F37021; /* ILP Orange */
+  --color-accent-hover: #D65A1A;
+  --color-border: #333333;
+  --color-text: #E0E0E0;
+  --color-heading: #FFFFFF;
+  --color-muted: #AAAAAA;
+  
+  --font-heading: 'DM Sans', sans-serif; /* Reference shows clean sans-serif for headings too */
+  --font-body: 'DM Sans', sans-serif;
+  --transition: all 0.3s ease;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+[data-theme='dark'] {
+  --color-bg: #121212;
+  --color-surface: #1E1E1E;
+  --color-primary: #F37021;
+  --color-accent: #F37021;
+  --color-border: #333333;
+  --color-text: #CCCCCC;
+  --color-heading: #FFFFFF;
+  --color-muted: #AAAAAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+  transition: var(--transition);
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+}

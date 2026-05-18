@@ -1,0 +1,128 @@
+.adminContainer {
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--color-heading);
+}
+
+.header p {
+  color: var(--color-muted);
+}
+
+.submissionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.submissionCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.cardHeader h3 {
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.headerRight {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #EF4444;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  opacity: 0.6;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  opacity: 1;
+}
+
+.senderInfo {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.messageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  color: var(--color-text);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 0;
+  background-color: var(--color-bg);
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.label {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  min-width: 80px;
+}
+
+.fieldGroup {
+  display: flex;
+  align-items: baseline;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  color: var(--color-muted);
+}

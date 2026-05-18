@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logoText span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #DDA24C;
+  letter-spacing: -0.5px;
+}
+
+.logo {
+  flex: 1;
+}
+
+/* Center Pill Nav */
+.navLinksContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  background-color: rgba(13, 27, 36, 0.85); /* Solid dark enough for white pages */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 2.5rem;
+  border-radius: 40px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #E5E7EB;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: #DDA24C;
+}
+
+.active {
+  color: #DDA24C !important;
+}
+
+/* Right Section */
+.rightSection {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.startBtn {
+  background-color: transparent;
+  color: #DDA24C;
+  font-weight: 600;
+  padding: 0.6rem 0.6rem 0.6rem 1.5rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #DDA24C;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.startBtn:hover {
+  background-color: rgba(221, 162, 76, 0.1);
+}
+
+.quoteBtn {
+  background-color: #DDA24C;
+  color: #111A23;
+  font-weight: 600;
+  padding: 0.6rem 0.6rem 0.6rem 1.5rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.quoteBtn:hover {
+  background-color: #C08A36;
+}
+
+.arrowIcon {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #DDA24C;
+}
+
+@media (max-width: 992px) {
+  .navLinks {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  .navLinks.mobileOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    width: 90%;
+    background-color: #111A23;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+}
