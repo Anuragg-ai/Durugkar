@@ -23,6 +23,13 @@ const services = [
     desc: "Committed to upholding accessible justice by providing legal aid and support to those in need through the District Legal Services Authority.",
     image: "/images/service_legal_aid.png",
     type: "white"
+  },
+  {
+    pill: "MEDIATION",
+    title: "Mediation & ADR",
+    desc: "Facilitating structured negotiations to resolve family, civil, and commercial disputes amicably out of court, ensuring a confidential and cost-effective resolution.",
+    image: "/images/service_mediation.png",
+    type: "dark"
   }
 ];
 
@@ -55,6 +62,14 @@ const Services = () => {
           <p className={styles.subtitle}>
             I deliver trusted legal services with proven experience and a results-driven focus.
           </p>
+          <div className={styles.navControls}>
+            <button className={styles.navBtn} onClick={scrollLeft} aria-label="Scroll left">
+              <ChevronLeft size={24} />
+            </button>
+            <button className={styles.navBtn} onClick={scrollRight} aria-label="Scroll right">
+              <ChevronRight size={24} />
+            </button>
+          </div>
         </div>
       </div>
 

@@ -30,18 +30,18 @@ const Contact = () => {
       {/* Main Form Section */}
       <section className={styles.formSection}>
         <div className={styles.formContainer}>
-          
+
           {/* Info Column */}
           <div className={styles.infoCol}>
             <h2 className={styles.sectionTitle}>Contact</h2>
             <p className={styles.infoText}>
               Have a legal question or need professional guidance? Contact me to schedule a consultation and receive clear, confidential legal advice tailored to your needs.
             </p>
-            
+
             <div className={styles.contactMethod}>
               <h3 className={styles.methodTitle}>Chat On Whatsapp</h3>
               <a href="https://wa.me/10634873487698" className={styles.whatsappLink} target="_blank" rel="noopener noreferrer">
-                +1 063487 3487698
+                +91 94221 20494
               </a>
             </div>
           </div>
@@ -65,6 +65,7 @@ const Contact = () => {
                     <option value="matrimonial">Matrimonial Law</option>
                     <option value="civil">Civil Litigation</option>
                     <option value="aid">Legal Aid & Consultation</option>
+                    <option value="mediation">Mediation & ADR</option>
                   </select>
                 </div>
                 <div className={`${styles.formField} ${styles.fullWidth}`}>

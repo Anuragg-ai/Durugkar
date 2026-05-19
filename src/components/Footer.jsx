@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        
+
         {/* Column 1 - Quick Links */}
         <div className={styles.linkCol}>
           <h3 className={styles.colTitle}>Quick Links</h3>
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
               <Mail size={18} className={styles.icon} />
-              <p className={styles.infoText}>contact@durugkar.com</p>
+              <p className={styles.infoText}>jyotisdurugkar@gmail.com</p>
             </div>
             <div className={styles.infoItem}>
               <Phone size={18} className={styles.icon} />
@@ -36,8 +36,8 @@ const Footer = () => {
             <div className={styles.infoItem}>
               <MapPin size={18} className={styles.icon} />
               <p className={styles.infoText}>
-                Adv. Jyoti Durugkar<br />
-                Marar Toli, Laxmi Nagar,<br />
+                Adv. Jyoti Shirish Durugkar<br />
+                Balaghat Road Behind N.P School, Marar Toli,<br />
                 Gondia, Maharashtra 441601
               </p>
             </div>
